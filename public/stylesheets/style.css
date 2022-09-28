@@ -43,6 +43,8 @@ ul {
 }
 li {
   float: left;
+  position: relative;
+  left: 25%;
 }
 li a {
   display: block;

@@ -14,15 +14,15 @@ console.log(currenthour);
 
 // do a conditional
 
-var emailmessage = "You are <strong>OK</strong> to email me now";
+var emailmessage = "You are <strong>OK</strong> to contact me now and I will respond shortly";
 
-if (currenthour < 8 || currenthour > 16 || daylist[day] != "Friday"  ) {
-  emailmessage = "sorry this is out of work hours, try again Friday" ;
+if (currenthour < 9 || currenthour > 17 || daylist[day] != "Friday"  ) {
+  emailmessage = "Sorry it is currently out of our working hours, i will try respond on Friday 9am-5pm UK" ;
 }
 
 var getheading = document.querySelector(".contact-me h2");
 console.log(getheading);
 getheading.insertAdjacentHTML(
   "afterend",
-  '<p class="js-message">' + emailmessage + "</p>"
+  '<p class="js-message">' + emailmessage + "</p>" 
 );

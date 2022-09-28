@@ -38,9 +38,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-}
-li {
-  float: left;
+  width: 100%; 
+  padding: 1px; 
+  box-sizing: border-box; 
+  resize: vertical
 }
 li a {
   display: block;

@@ -1,5 +1,4 @@
 body {
-  padding: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*HOME PAGE*/
@@ -12,6 +11,25 @@ a {
   margin-right: auto;
   height: 100px;
 }
+#header-image-menu{
+  top: 2px;
+  position: relative;
+}
+#header-image-menu img{
+  width: 100%;
+  margin: none;
+  padding: none;
+  height: 550px;
+}
+#image-text{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-family: 'Roboto';
+  color: #000;
+  transform: translate(-30%, -30%);
+  text-align: center;
+}
 
 /*NAVIGATION*/
 ul {
@@ -20,9 +38,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-}
-li {
-  float: left;
+  width: 100%; 
+  padding: 1px; 
+  box-sizing: border-box; 
+  resize: vertical
 }
 li a {
   display: block;
@@ -56,5 +75,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #0ecbec;
+  background-color: #e92084;
 }

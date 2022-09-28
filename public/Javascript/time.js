@@ -16,7 +16,7 @@ if (currenthour < 8 || currenthour > 16 || calObj.get(Calendar.DAY_OF_WEEK) != C
   emailmessage = "sorry this is out of work hours, try again " + Calendar.FRIDAY ;
 }
 
-var getheading = document.querySelector(".contact-me h2");
+var getheading = document.querySelector("Contact Me");
 console.log(getheading);
 getheading.insertAdjacentHTML(
   "afterend",

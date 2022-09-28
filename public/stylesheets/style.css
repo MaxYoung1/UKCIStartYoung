@@ -21,6 +21,77 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
+/* Start of Reece's uni stuff */
+/* navigation (using flexbox) */
+
+/* small screen code */
+.page-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav li {
+  flex: 1 1 50%; /* Allow to grow, allow to shrink, only 2 buttons per line */
+  display: flex; /* Children become flexboxes */
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.page-nav a {
+  padding: 15px 10px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  transition: all 0.2s ease;
+}
+
+.page-nav a:hover {
+  background: #020B0D;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 760px) {
+  .page-nav ul {
+    flex-wrap: nowrap;
+  }
+  .page-nav li {
+    flex: 1 1 25%;
+  }
+}
+.page-nav {
+  background-color: #061619;
+  position: sticky;
+  top: 0px;
+}
+
+/* page header */
+.page-header {
+  background: #061619;
+  display: flex;
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/hero-opti.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 65%;
+  background-blend-mode: hard-light;
+}
+
+.header-content {
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #0B1A1E;
+}
+/* End of Reece's Uni stuff */
 li {
   float: left;
 }

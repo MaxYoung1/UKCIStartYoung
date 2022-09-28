@@ -1,5 +1,4 @@
 body {
-  padding: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*HOME PAGE*/
@@ -11,6 +10,25 @@ a {
   margin-left: auto;
   margin-right: auto;
   height: 100px;
+}
+#header-image-menu{
+  top: 2px;
+  position: relative;
+}
+#header-image-menu img{
+  width: 100%;
+  margin: none;
+  padding: none;
+  height: 550px;
+}
+#image-text{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-family: 'Roboto';
+  color: #000;
+  transform: translate(-30%, -30%);
+  text-align: center;
 }
 
 /*NAVIGATION*/
@@ -31,7 +49,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #e92084;
 }

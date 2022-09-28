@@ -9,28 +9,50 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
+  height: 100%;
 }
 #header-image-menu{
-  top: 2px;
+  top: 0.05rem;
   position: relative;
 }
 #header-image-menu img{
   width: 100%;
   margin: none;
   padding: none;
-  height: 550px;
+  height: 34rem;
 }
 #image-text{
   position: absolute;
   top: 50%;
-  left: 60%;
-  font-family: 'Roboto';
+  left: 70%;
+  font-family: 'Arial';
   color: #000;
   transform: translate(-30%, -30%);
   text-align: center;
+  font-size: 5rem;
 }
-
+h2{
+  text-align: center;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e92084;
+}
+#about{
+  text-align: center;
+}
+#list{
+  padding-left: 2rem;
+}
+footer{
+  color: #000000;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  font-size: 0.8rem;
+  padding-left: 1rem
+}
+#footertitle{
+  font-size: 1.2rem;
+}
 /*NAVIGATION*/
 ul {
   list-style-type: none;

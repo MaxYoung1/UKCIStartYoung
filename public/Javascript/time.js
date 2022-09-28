@@ -17,7 +17,7 @@ console.log(currenthour);
 var emailmessage = "You are <strong>OK</strong> to email me now";
 
 if (currenthour < 8 || currenthour > 16 || daylist[day] != "Friday"  ) {
-  emailmessage = "sorry this is out of work hours, try again " + day ;
+  emailmessage = "sorry this is out of work hours, try again Friday" ;
 }
 
 var getheading = document.querySelector(".contact-me h2");

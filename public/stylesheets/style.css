@@ -65,6 +65,8 @@ ul {
 }
 li {
   float: left;
+  position: relative;
+  left: 33%;
 }
 li a {
   display: block;

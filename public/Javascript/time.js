@@ -24,5 +24,5 @@ var getheading = document.querySelector(".contact-me h2");
 console.log(getheading);
 getheading.insertAdjacentHTML(
   "afterend",
-  '<p class="js-message">' + emailmessage + "</p>" 
+  '<p class="js-message"> <strong>' + emailmessage + "</strong></p>" 
 );

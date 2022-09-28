@@ -1,6 +1,7 @@
 // OPEN THE CONSOLE BELOW TO SEE THE JAVASCRIPT RUNNING
 
 // find out what time it is
+var today = new Date();
 var day = today.getDay();
 var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
 

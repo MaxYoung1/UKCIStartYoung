@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/99a00f1b-b92b-4b23-8599-fb8d52f79f69/AppServices/subscriptions/99a00f1b-b92b-4b23-8599-fb8d52f79f69/resourceGroups/UKCI/providers/Microsoft.Web/sites/UKCIStartYoungUK",
+    "appService.deploySubpath": "."
+}

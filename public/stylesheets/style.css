@@ -1,5 +1,4 @@
 body {
-  padding: 5px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 /*HOME PAGE*/
@@ -12,6 +11,25 @@ a {
   margin-right: auto;
   height: 100px;
 }
+#header-image-menu{
+  top: 2px;
+  position: relative;
+}
+#header-image-menu img{
+  width: 100%;
+  margin: none;
+  padding: none;
+  height: 550px;
+}
+#image-text{
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-family: 'Roboto';
+  color: #000;
+  transform: translate(-30%, -30%);
+  text-align: center;
+}
 
 /*NAVIGATION*/
 ul {
@@ -20,80 +38,10 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-}
-/* Start of Reece's uni stuff */
-/* navigation (using flexbox) */
-
-/* small screen code */
-.page-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.page-nav li {
-  flex: 1 1 50%; /* Allow to grow, allow to shrink, only 2 buttons per line */
-  display: flex; /* Children become flexboxes */
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-}
-
-.page-nav a {
-  padding: 15px 10px;
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 auto;
-  transition: all 0.2s ease;
-}
-
-.page-nav a:hover {
-  background: #020B0D;
-  color: #FFFFFF;
-}
-@media screen and (min-width: 760px) {
-  .page-nav ul {
-    flex-wrap: nowrap;
-  }
-  .page-nav li {
-    flex: 1 1 25%;
-  }
-}
-.page-nav {
-  background-color: #061619;
-  position: sticky;
-  top: 0px;
-}
-
-/* page header */
-.page-header {
-  background: #061619;
-  display: flex;
-  min-height: 40vh;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../img/hero-opti.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 65%;
-  background-blend-mode: hard-light;
-}
-
-.header-content {
-    max-width: 500px;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    background-color: #0B1A1E;
-}
-/* End of Reece's Uni stuff */
-li {
-  float: left;
+  width: 100%; 
+  padding: 1px; 
+  box-sizing: border-box; 
+  resize: vertical
 }
 li a {
   display: block;
@@ -107,7 +55,7 @@ li a:hover {
 }
 input[type=text],input[type=tel], select, textarea {
   width: 100%; 
-  padding: 12px; 
+  padding: 13px; 
   border: 1px solid #ccc; 
   border-radius: 4px; 
   box-sizing: border-box; 
@@ -127,5 +75,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #0ecbec;
+  background-color: #e92084;
 }

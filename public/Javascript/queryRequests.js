@@ -1,8 +1,8 @@
 const { response } = require("../../app");
 
 let xhr = new XMLHttpRequest();
-const url = "http://localhost:3000/fileHandler";
-//const url = "https://ukcistartyounguk.azurewebsites.net/fileHandler"
+//const url = "http://localhost:3000/fileHandler";
+const url = "https://ukcistartyounguk.azurewebsites.net/fileHandler"
 
 function sendPost() {
     // build JSON string
@@ -30,8 +30,8 @@ function sendPost() {
 
 function postToFile(jsonData) {
     let xhr = new XMLHttpRequest();
-    //const url = "https://ukcistartyounguk.azurewebsites.net/fileHandler"
-    const url = "http://localhost:3000/fileHandler";
+    const url = "https://ukcistartyounguk.azurewebsites.net/fileHandler"
+    //const url = "http://localhost:3000/fileHandler";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -58,8 +58,8 @@ function postToFile(jsonData) {
 
 function getQueries() {
     let xhr = new XMLHttpRequest();
-    const url = "http://localhost:3000/fileHandler";
-    //const url = "https://ukcistartyounguk.azurewebsites.net/fileHandler"
+    //const url = "http://localhost:3000/fileHandler";
+    const url = "https://ukcistartyounguk.azurewebsites.net/fileHandler"
     xhr.open("GET", url, false);
     xhr.send();
 

@@ -70,20 +70,29 @@ function getQueries() {
     console.log(jsonResponse);
 
 
-    let response = xhr.responseText;
 
 
-    queries = JSON.parse(response);
+    //queries = JSON.parse(response);
     //queries = queries.body.queries; // that makes no sense
 
-    console.log(queries);
+    console.log("Qs are " + jsonResponse);
 
     formBox = document.getElementById("queryForms");
 
+    var paragraphs = "";
+
+    for (var i = 0; i < jsonResponse.queries.length; i++) {
+        console.log(jsonResponse.queries[i].firstName)
+         paragraphs += "<p>" + JSON.stringify(jsonResponse.queries[i]) +"</p><br>";
+    }
+
+    console.log(paragraphs)
+    formBox.innerHTML = paragraphs;
 
     // formBox already exists, every form needs a wrapper
     // a form inside of it
     // then a bunch of inputs
+    /*
     for (var i = 0; i < response.length; i++) {
         console.log("are we in loop?");
         container = document.createElement('div');
@@ -107,5 +116,6 @@ function getQueries() {
 
         formBox.appendChild(container);
     }
+    */
 
 }

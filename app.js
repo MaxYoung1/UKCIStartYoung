@@ -12,6 +12,9 @@ var contactRouter = require('./routes/contact');
 var buddyRouter = require('./routes/buddy');
 var fileRouter = require('./routes/fileHandler');
 var staffLoginRouter = require('./routes/staffLogin');
+var donationsRouter = require('./routes/donations');
+var onBoardinginRouter = require('./routes/onBoarding');
+var refferalsRouter = require('./routes/refferals');
 
 var app = express();
 
@@ -31,6 +34,9 @@ app.use('/contact', contactRouter);
 app.use('/buddy', buddyRouter);
 app.use('/fileHandler', fileRouter);
 app.use('/staffLogin', staffLoginRouter);
+app.use('/donations', donationsRouter);
+app.use('/onBoarding', onBoardinginRouter);
+app.use('/refferals', refferalsRouter);
 
 const bodyParser = require("body-parser");
 // app.use(

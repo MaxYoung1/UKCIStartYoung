@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 var contactRouter = require('./routes/contact');
 var buddyRouter = require('./routes/buddy');
 var fileRouter = require('./routes/fileHandler');
+var staffLoginRouter = require('./routes/staffLogin');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/buddy', buddyRouter);
 app.use('/fileHandler', fileRouter);
+app.use('/staffLogin', staffLoginRouter);
 
 const bodyParser = require("body-parser");
 // app.use(

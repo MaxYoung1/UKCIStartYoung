@@ -22,8 +22,10 @@ function write(content) {
 }
 
 function read() {
+    //return "hello world"
     try {
-        const data = fs.readFileSync('./public/files/queries.json', 'utf8');
+        const data = fs.readFileSync('./public/files/queries.json', {encoding:'utf8', flag:'r'});
+        console.log(data);
         return data;
     } catch (err) {
         return err;
@@ -31,7 +33,7 @@ function read() {
 }
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.send(read());
+    res.send(JSON.parse(read()));
 });
 
 router.post('/', function (req, res, next) {

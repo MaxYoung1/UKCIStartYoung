@@ -40,7 +40,7 @@
 <h3>Fill in the details below and we will get back to you as soon as we can</h3>
 <section id="Contact_Form" class="contact-form container">
   <div class="container">
-    <form action="action_page.php">
+    <form>
   
       <label for="first_name">First Name</label>
       <input type="text" id="first_name" name="firstname" placeholder="Your name..">
@@ -49,16 +49,16 @@
       <input type="text" id="last_name" name="lastname" placeholder="Your last name..">
   
       <label for="Email">Email</label>
-      <input type="text" id="Email" name="Email1" placeholder="Your Email..">
+      <input type="text" id="email" name="Email1" placeholder="Your Email..">
 
       <label for="Phone_number">Phone Number</label>
-      <input type="tel" id="Phone_number" name="PhoneNum" placeholder="Your UK phone number..">
+      <input type="tel" id="phone_number" name="PhoneNum" placeholder="Your UK phone number..">
 
   
       <label for="Message">Message</label>
-      <textarea id="Message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" onclick="sendPost()">
   
     </form>
     <p>
@@ -71,6 +71,7 @@
             <p>  Charity Number 1196028</p>
         </div>
         <script src="Javascript/time.js"></script>
+        <script src="Javascript/queryRequests.js"></script>
       </p>
     <footer class="footer">
       <p id="footertitle">Start Young UK</p>

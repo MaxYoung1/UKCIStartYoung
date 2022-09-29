@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <img alt="Start Young UK Logo" id="logo" src="/img/StartYoungUKLogo.png"></img>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="contact">Onboarding</a></li>
-        <li><a href="contact">Referals</a></li>
-        <li><a href="buddy">Become A Buddy</a></li>
-        <li><a href="contact">Make a Donation</a></li>
-        <li><a href="contact">Staff Log in</a></li>
-        <li><a href="contact">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div id="header-image-menu">
-      <img src="/img/banner.png">
-      <h1 id = "image-text"> Start Young UK </h1>
-    </div>
 
-    <h2>About Us</h2>
-    <p id="about"> 
-      <br>
-      It is a sad reality that many areas in the UK are poverty stricken, with many children and young adults going without the basic needs. A group of individuals came together to help and support local schools in East London with a Christmas Gifting Initiative in 2020.
-      <br>
-      <br>
-      The schools requested clothes and food rather than toys as certain children were coming to school with socks on their hands instead of gloves, and some with no under garments. This was a huge eye opener for us.
-      <br>
-      <br>
-      We were able to give over 400 parcels, which included , care packages and food hampers , underwear, socks, hats, gloves & scarves.
-      <br>
-      <br>
-      Families were struggling financially and with the impact of COVID-19, this made their daily living struggles even worse. Our main aim was to ensure those families who were disadvantaged and living in poverty were prioritised. It was apparent that this was an even bigger problem than we had initially anticipated and although the gifts were a help, these families needed long term assistance. 
-      <br>
-      <br>
-      Out of this appeal <strong>Start Young UK</strong> was born.
-      <br>
-      <br> 
-      As a registered charity our promise is to act as a resource for young people from the age of 5 up to the age of 18 living in underprivileged and/or disadvantaged areas of Newham, London and the surrounding area by providing advice and assistance and other activities as a means of:
-    </p>
-    <p id="list"></p>
-      (a) advancing in life and helping young people. By developing their skills, capacities and capabilities to enable them to participate in society as independent, mature and responsible individuals;
-      <br>  
-      (b) advancing education;
-      <br>  
-      (c) relieving unemployment;
-      <br>  
-      (d) providing recreational and leisure time activity in the interests of social welfare for people living in the area of benefit who have need by reason of their youth, age, infirmity or disability, poverty or social and economic circumstances with a view to improving the conditions of life of such persons.
-      <br>
-    </p>
-  </body>
-  <footer class="footer">
-    <p id="footertitle">Start Young UK</p>
-    <p>Copyright © 2022 All rights reserved</p>
-  </footer>
-  <script defer src="Javascript/databaseQuery.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <img alt="Start Young UK Logo" id="logo" src="/img/StartYoungUKLogo.png"></img>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="contact">Onboarding</a></li>
+      <li><a href="contact">Referals</a></li>
+      <li><a href="buddy">Become A Buddy</a></li>
+      <li><a href="contact">Make a Donation</a></li>
+      <li><a href="contact">Staff Log in</a></li>
+      <li><a href="contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div id="header-image-menu">
+    <img src="/img/banner.png">
+    <h1 id="image-text"> Start Young UK </h1>
+  </div>
+
+  <h2>About Us</h2>
+  <p id="about">
+    <br>
+    It is a sad reality that many areas in the UK are poverty stricken, with many children and young adults going
+    without the basic needs. A group of individuals came together to help and support local schools in East London with
+    a Christmas Gifting Initiative in 2020.
+    <br>
+    <br>
+    The schools requested clothes and food rather than toys as certain children were coming to school with socks on
+    their hands instead of gloves, and some with no under garments. This was a huge eye opener for us.
+    <br>
+    <br>
+    We were able to give over 400 parcels, which included , care packages and food hampers , underwear, socks, hats,
+    gloves & scarves.
+    <br>
+    <br>
+    Families were struggling financially and with the impact of COVID-19, this made their daily living struggles even
+    worse. Our main aim was to ensure those families who were disadvantaged and living in poverty were prioritised. It
+    was apparent that this was an even bigger problem than we had initially anticipated and although the gifts were a
+    help, these families needed long term assistance.
+    <br>
+    <br>
+    Out of this appeal <strong>Start Young UK</strong> was born.
+    <br>
+    <br>
+    As a registered charity our promise is to act as a resource for young people from the age of 5 up to the age of 18
+    living in underprivileged and/or disadvantaged areas of Newham, London and the surrounding area by providing advice
+    and assistance and other activities as a means of:
+  </p>
+  <p id="list"></p>
+  (a) advancing in life and helping young people. By developing their skills, capacities and capabilities to enable them
+  to participate in society as independent, mature and responsible individuals;
+  <br>
+  (b) advancing education;
+  <br>
+  (c) relieving unemployment;
+  <br>
+  (d) providing recreational and leisure time activity in the interests of social welfare for people living in the area
+  of benefit who have need by reason of their youth, age, infirmity or disability, poverty or social and economic
+  circumstances with a view to improving the conditions of life of such persons.
+  <br>
+  </p>
+</body>
+<footer class="footer">
+  <p id="footertitle">Start Young UK</p>
+  <p>Copyright © 2022 All rights reserved</p>
+</footer>
+<script defer>
+  var connection = new ActiveXObject("ADODB.Connection");
+
+  var connectionstring = "Server=tcp:mydatabasecode.database.windows.net,1433;Initial Catalog=databasename;Persist Security Info=False;User ID=azureuser;Password=Azuredatabase1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+  connection.Open(connectionstring);
+  var rs = new ActiveXObject("ADODB.Recordset");
+
+  rs.Open("select * from [SalesLT].[Address]", connection);
+  rs.MoveFirst
+  while (!rs.eof) {
+    document.write(rs.fields(1));
+    rs.movenext;
+  }
+
+  rs.close;
+  connection.close; 
+</script>
+
 </html>
